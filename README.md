@@ -1,5 +1,5 @@
 # EvilIP
-<p>Search if your IP is blacklisted on Evil NET DNSBL. <br/>The DNSBL is daily update with new IP add it.</p>
+<p>Search if your IP is blacklisted on EvilNet DNSBL. <br/>The DNSBL is daily update with new IP add it.</p>
 
 # How TO
 <p><strong>NOTE:</strong> You need to install DIG for this script work well.<br/>
