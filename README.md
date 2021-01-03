@@ -3,9 +3,10 @@
 
 # How TO
 <p><strong>NOTE:</strong> You need to install DIG for this script work well.<br/>
-<strong>NOTE:</strong> Ubuntu / Debian: apt-get install dig <br/>
-<strong>NOTE:</strong> CentOS: yum install dig
+<strong>NOTE:</strong> Ubuntu / Debian: <strong>apt-get install dig</strong> <br/>
+<strong>NOTE:</strong> CentOS: <strong>yum install dig</strong>
 </p>
+
 <p>
  
 git clone https://github.com/unixfool/EvilIP.git<br/>
