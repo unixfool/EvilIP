@@ -32,7 +32,7 @@ reverse=$(echo "$1" |
 	  sed -ne "s~^\([0-9]\{1,3\}\)\.\([0-9]\{1,3\}\)\.\([0-9]\{1,3\}\)\.\([0-9]\{1,3\}\)$~\4.\3.\2.\1~p")
  
 if [ "x${reverse}" = "x" ] ; then
-		  echo -e "${RED}"; 
+		  echo "${RED}"; 
 		        ERROR  " '$1' This is NOT a valid IP address"
 				  echo -e "${WHITE}"; 
 				        exit 1
@@ -65,13 +65,13 @@ HostToIP()
    {
 	    result=$(dig +short -t a "$rIP"."$BL")
 	     if [ -n "$result" ]; then
-		        echo  -e "${RED} IS LISTED :(" 
-			   echo -e "${NORMAL}" "$BL" "${RED}" "(answer = $result)""${NORMAL}"
+		        echo  "${RED} IS LISTED :(" 
+			   echo "${NORMAL}" "$BL" "${RED}" "(answer = $result)""${NORMAL}"
 			      grep "$result" rbl.txt
-			         echo -e "${RED} More info about your IP:" "${NORMAL} https://dnsbl.evilnet.org/your?ipaddress=""$IP"
-				    echo -e "${RED} Request Removal:" "${NORMAL} https://dnsbl.evilnet.org/request-removal"
+			         echo "${RED} More info about your IP:" "${NORMAL} https://dnsbl.evilnet.org/your?ipaddress=""$IP"
+				    echo "${RED} Request Removal:" "${NORMAL} https://dnsbl.evilnet.org/request-removal"
 				     else
-					        echo -e "${GREEN} NOT LISTED :) \t ${NORMAL}" "$BL"
+					        echo "${GREEN} NOT LISTED :) \t ${NORMAL}" "$BL"
 						 fi
 					 }
 
