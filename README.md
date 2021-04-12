@@ -12,7 +12,7 @@
 git clone https://github.com/unixfool/EvilIP.git<br/>
 cd EvilIP<br/>
 chmod +x evilip.sh<br/>
-./evilip.sh IP
+sh evilip.sh IP
 </p>
 
 # Listed
