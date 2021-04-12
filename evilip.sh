@@ -24,9 +24,9 @@ ERROR()
 	    exit 2
     }
 
-echo -e "${RED}" 
+echo "${RED}" 
 [ $# -ne 1 ] && ERROR "Please specify a single IP address!"
-echo -e "${WHITE}"; 
+echo  "${WHITE}"; 
  
 reverse=$(echo "$1" |
 	  sed -ne "s~^\([0-9]\{1,3\}\)\.\([0-9]\{1,3\}\)\.\([0-9]\{1,3\}\)\.\([0-9]\{1,3\}\)$~\4.\3.\2.\1~p")
@@ -87,7 +87,7 @@ HostToIP()
 					   HostToIP
 					     rIP=$(Reverse "$IP")
 					       echo; Repeat - 100
-					         echo -e "${YELLOW}" "Your" IP "Address is:" "${NORMAL}" "$IP"  "${YELLOW}" "\t Your" HOST "is:" "${NORMAL}" "${REVERSE_DNS}" "${NORMAL}"
+					         echo  "${YELLOW}" "Your" IP "Address is:" "${NORMAL}" "$IP"  "${YELLOW}" "\t Your" HOST "is:" "${NORMAL}" "${REVERSE_DNS}" "${NORMAL}"
 						   Repeat - 100
 						     for BL in $DNSBL; do
 							         Check
